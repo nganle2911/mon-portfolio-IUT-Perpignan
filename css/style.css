@@ -1,6 +1,80 @@
+/* Variables globales pour une palette de couleurs CSS */
+:root {
+    --primary-bg-color: #D8D2C2;
+    --secondary-bg-color: #FAF7F0;
+    --primary-text-color: #4A4947;
+    --highlight-color: #B17457;
+}
+
+/* --------------------------------------------------------------- */
 /* PAGE D'ACCUEIL */
-/* Fond d'écran */
+/* Configuration générale */
+/* Image de fond fixe */
 body {
     background-image: url("../images/bg-2.png");
     background-repeat: no-repeat;
+    background-size: cover; 
+
+    /* Polices pour des textes */
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-size: 16px;
 }
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+/* Navbar */
+.menu .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navbar - Logo */
+.menu .container .menu__left {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar - Menu */
+.menu .container .menu__right {
+    display: flex;
+    align-items: center;
+}
+
+.menu .container .menu__right ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu .container .menu__right ul li {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menu .container .menu__right ul a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.menu .container .menu__right ul a.active {
+    color: var(--highlight-color);
+}
+
+.menu .container .menu__right ul a:hover {
+    color: var(--highlight-color);
+    animation-duration: 5s;
+}
+
+
+
+/* --------------------------------------------------------------- */
+/* PAGE D'INTERET */
+
+/* --------------------------------------------------------------- */
+/* PAGE D'APPRENTISSAGE */
