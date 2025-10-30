@@ -33,6 +33,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    background: var(--secondary-bg-color);
 }
 
 .menu .container {
@@ -60,8 +61,8 @@ body {
 }
 
 .menu .container .menu__right ul li {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .menu .container .menu__right ul a {
@@ -78,9 +79,6 @@ body {
     color: var(--highlight-color);
     animation-duration: 5s;
 }
-
-
-
 
 
 /* --------------------------------------------------------------- */
