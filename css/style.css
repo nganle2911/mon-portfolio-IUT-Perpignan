@@ -14,6 +14,7 @@ body {
     background-image: url("../images/bg-2.png");
     background-repeat: no-repeat;
     background-size: cover; 
+    background-attachment: fixed;
 
     /* Polices pour des textes */
     font-family: "Playfair Display", serif;
@@ -27,6 +28,13 @@ body {
 }
 
 /* Navbar */
+.menu {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .menu .container {
     display: flex;
     justify-content: space-between;
@@ -70,6 +78,8 @@ body {
     color: var(--highlight-color);
     animation-duration: 5s;
 }
+
+
 
 
 
