@@ -33,6 +33,7 @@ body {
     top: 0;
     width: 100%;
     background: var(--primary-bg-color);
+    z-index: 100; 
 }
 
 .menu .container {
@@ -81,10 +82,13 @@ body {
 
 /* PRÉSENTATION */
 .section {
-    /* background: #000; */
-    margin: 95px 0;
     padding: 50px 0;
     color: var(--primary-text-color);
+}
+
+.accueil {
+    margin-top: 95px;
+    height: 100vh;
 }
 
 .section .titre {
@@ -147,7 +151,6 @@ body {
 }
 
 .accueil .accueil__texte {
-    overflow: hidden;
     opacity: 0;
     animation-name: slideUp;
     animation-delay: 2s;
@@ -157,3 +160,44 @@ body {
     font-size: 28px;
 }
 
+/* FORMATION */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    /* max-width: 1200px; */
+}
+
+/* la règle verticale de timeline */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    background-color: var(--secondary-bg-color);
+    top: 0;
+    bottom: 0;
+    left: 10%;
+}
+
+/* les triangles sur la règle */
+.timeline__item {
+    position: relative;
+    padding: 10px 30px;
+}
+
+.timeline__item::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 123px;
+    z-index: 1;
+    /* forme triangulaire */
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 24px solid var(--highlight-color);
+}
+
+.itemRight {
+    left: 50%;
+}
