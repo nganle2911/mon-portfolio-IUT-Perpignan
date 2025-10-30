@@ -107,7 +107,7 @@ body {
 }
 
 /* Création d'un effet de frappe (typing effect) avec CSS */
-/* Animation typing */
+/* Animation frappe pour accueil__prenom */
 @keyframes effetFrappe {
     from {
         width: 0;
@@ -119,11 +119,41 @@ body {
 
 #accueil__prenom {
     overflow: hidden;
-    border-right: 2px solid var(--primary-text-color);
+    border-right: 2px solid var(--highlight-color);
     white-space: nowrap;
-    animation: effetFrappe 2s steps(25, end) forwards;
     font-size: 55px;
     width: 0;
     font-family: "Merriweather", serif;
     font-weight: 400;
+    color: var(--highlight-color);
+    margin: 20px 0;
+    animation-name: effetFrappe;
+    animation-duration: 2s;
+    animation-timing-function: steps(25, end);
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
 }
+
+/* Animation glisser vers le haut pour accueil__texte */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.accueil .accueil__texte {
+    overflow: hidden;
+    opacity: 0;
+    animation-name: slideUp;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    font-size: 28px;
+}
+
