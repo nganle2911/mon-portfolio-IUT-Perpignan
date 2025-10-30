@@ -1,14 +1,13 @@
 /* Variables globales pour une palette de couleurs CSS */
 :root {
-    --primary-bg-color: #D8D2C2;
-    --secondary-bg-color: #FAF7F0;
+    --primary-bg-color: #FAF7F0;
+    --secondary-bg-color: #D8D2C2;
     --primary-text-color: #4A4947;
     --highlight-color: #B17457;
 }
 
 /* --------------------------------------------------------------- */
 /* PAGE D'ACCUEIL */
-/* Configuration générale */
 /* Image de fond fixe */
 body {
     background-image: url("../images/bg-2.png");
@@ -27,13 +26,13 @@ body {
     margin: auto;
 }
 
-/* Navbar */
+/* MENU */
 .menu {
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--secondary-bg-color);
+    background: var(--primary-bg-color);
 }
 
 .menu .container {
@@ -80,9 +79,51 @@ body {
     animation-duration: 5s;
 }
 
+/* PRÉSENTATION */
+.section {
+    /* background: #000; */
+    margin: 95px 0;
+    padding: 50px 0;
+    color: var(--primary-text-color);
+}
 
-/* --------------------------------------------------------------- */
-/* PAGE D'INTERET */
+.section .titre {
+    width: 6%;
+    text-align: center;
+    padding: 12px 16px;
+    margin: auto;
+    background: var(--secondary-bg-color);
+    color: var(--highlight-color);
+    border: 2px solid var(--secondary-bg-color);
+    border-radius: 10px;
 
-/* --------------------------------------------------------------- */
-/* PAGE D'APPRENTISSAGE */
+    /* Police pour des titres */
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+}
+
+.section .container {
+    padding: 50px 0;
+}
+
+/* Création d'un effet de frappe (typing effect) avec CSS */
+/* Animation typing */
+@keyframes effetFrappe {
+    from {
+        width: 0;
+    }
+    to {
+        width: 42%;
+    }
+}
+
+#accueil__prenom {
+    overflow: hidden;
+    border-right: 2px solid var(--primary-text-color);
+    white-space: nowrap;
+    animation: effetFrappe 2s steps(25, end) forwards;
+    font-size: 55px;
+    width: 0;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
