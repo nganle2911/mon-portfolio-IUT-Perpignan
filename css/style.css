@@ -1,203 +1,234 @@
-/* Variables globales pour une palette de couleurs CSS */
+/* Variables globales pour le style CSS */
 :root {
-    --primary-bg-color: #FAF7F0;
-    --secondary-bg-color: #D8D2C2;
-    --primary-text-color: #4A4947;
-    --highlight-color: #B17457;
+  --primary-bg-color: #faf7f0;
+  --secondary-bg-color: #d8d2c2;
+  --primary-text-color: #4a4947;
+  --highlight-color: #b17457;
+  --font-title: "Merriweather", serif;
+  --font-text: "Playfair Display", serif;
 }
 
 /* --------------------------------------------------------------- */
 /* PAGE D'ACCUEIL */
 /* Image de fond fixe */
 body {
-    background-image: url("../images/bg-2.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-attachment: fixed;
+  background-image: url("../images/bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
-    /* Polices pour des textes */
-    font-family: "Playfair Display", serif;
-    font-style: normal;
-    font-size: 16px;
+  /* Polices pour des textes */
+  font-family: var(--font-text);
+  font-style: normal;
+  font-size: 16px;
 }
 
 .container {
-    max-width: 1320px;
-    margin: auto;
+  max-width: 1320px;
+  margin: auto;
 }
 
 /* MENU */
 .menu {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: var(--primary-bg-color);
-    z-index: 100; 
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--primary-bg-color);
+  z-index: 100;
 }
 
 .menu .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Navbar - Logo */
 .menu .container .menu__left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Navbar - Menu */
 .menu .container .menu__right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .menu .container .menu__right ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
 }
 
 .menu .container .menu__right ul li {
-    margin-right: 15px;
-    margin-left: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .menu .container .menu__right ul a {
-    color: var(--primary-text-color);
-    text-decoration: none;
-    padding-bottom: 5px;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-family: var(--font-title);
 }
 
 .menu .container .menu__right ul a.active {
-    color: var(--highlight-color);
+  color: var(--highlight-color);
 }
 
 .menu .container .menu__right ul a:hover {
-    color: var(--highlight-color);
-    animation-duration: 5s;
+  color: var(--highlight-color);
+  animation-duration: 5s;
 }
 
 /* PRÉSENTATION */
 .section {
-    padding: 50px 0;
-    color: var(--primary-text-color);
+  padding: 50px 0;
+  color: var(--primary-text-color);
 }
 
 .accueil {
-    margin-top: 95px;
-    height: 100vh;
+  margin-top: 95px;
+  height: 100vh;
 }
 
 .section .titre {
-    width: 6%;
-    text-align: center;
-    padding: 12px 16px;
-    margin: auto;
-    background: var(--secondary-bg-color);
-    color: var(--highlight-color);
-    border: 2px solid var(--secondary-bg-color);
-    border-radius: 10px;
+  width: 6%;
+  text-align: center;
+  padding: 12px 16px;
+  margin: auto;
+  background: var(--secondary-bg-color);
+  color: var(--highlight-color);
+  border: 2px solid var(--secondary-bg-color);
+  border-radius: 10px;
 
-    /* Police pour des titres */
-    font-family: "Merriweather", serif;
-    font-weight: bold;
+  /* Police pour des titres */
+  font-family: var(--font-title);
+  font-weight: bold;
 }
 
 .section .container {
-    padding: 50px 0;
+  padding: 50px 0;
+}
+
+.accueil .accueil__contenu {
+  padding-top: 50px;
 }
 
 /* Création d'un effet de frappe (typing effect) avec CSS */
 /* Animation frappe pour accueil__prenom */
 @keyframes effetFrappe {
-    from {
-        width: 0;
-    }
-    to {
-        width: 42%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 42%;
+  }
 }
 
 #accueil__prenom {
-    overflow: hidden;
-    border-right: 2px solid var(--highlight-color);
-    white-space: nowrap;
-    font-size: 55px;
-    width: 0;
-    font-family: "Merriweather", serif;
-    font-weight: 400;
-    color: var(--highlight-color);
-    margin: 20px 0;
-    animation-name: effetFrappe;
-    animation-duration: 2s;
-    animation-timing-function: steps(25, end);
-    animation-fill-mode: forwards;
-    animation-direction: alternate;
+  overflow: hidden;
+  border-right: 2px solid var(--highlight-color);
+  white-space: nowrap;
+  font-size: 55px;
+  width: 0;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  color: var(--highlight-color);
+  margin: 20px 0;
+  animation-name: effetFrappe;
+  animation-duration: 2s;
+  animation-timing-function: steps(25, end);
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
 }
 
 /* Animation glisser vers le haut pour accueil__texte */
 @keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .accueil .accueil__texte {
-    opacity: 0;
-    animation-name: slideUp;
-    animation-delay: 2s;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in;
-    font-size: 28px;
+  opacity: 0;
+  animation-name: slideUp;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+  font-size: 28px;
 }
 
 /* FORMATION */
-.timeline {
-    position: relative;
-    margin: 0 auto;
-    /* max-width: 1200px; */
+.formation .timeline {
+  padding-top: 50px;
 }
 
-/* la règle verticale de timeline */
-.timeline::after {
-    content: "";
-    position: absolute;
-    width: 5px;
-    background-color: var(--secondary-bg-color);
-    top: 0;
-    bottom: 0;
-    left: 10%;
+.timeline .timeline__section {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
 }
 
-/* les triangles sur la règle */
-.timeline__item {
-    position: relative;
-    padding: 10px 30px;
+.timeline .timeline__section .section__time {
+  margin-top: 20px;
+  font-family: var(--font-title);
+  font-weight: bold;
+  font-size: 20px;
+  width: 15%;
 }
 
-.timeline__item::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 123px;
-    z-index: 1;
-    /* forme triangulaire */
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 24px solid var(--highlight-color);
+.timeline .timeline__section .section__content {
+  display: flex;
 }
 
-.itemRight {
-    left: 50%;
+.section__content .content__line {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section__content .content__line .line {
+  content: "";
+  width: 3px;
+  height: 135%;
+  background: var(--highlight-color);
+}
+
+.section__content .content__line .lastLine {
+  height: 110%;
+}
+
+.section__content .content__line .dot {
+  position: relative;
+}
+
+.section__content .content__line .dot::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--highlight-color);
+  right: -12px;
+}
+
+.section__content .content__desc {
+  margin-left: 50px;
+}
+
+.section__content .content__desc h3 {
+  font-family: var(--font-title);
+  font-size: 20px;
+}
+
+.section__content .content__desc p {
+  font-size: 18px;
 }

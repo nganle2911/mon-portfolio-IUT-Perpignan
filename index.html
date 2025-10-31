@@ -1,92 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Fichier style CSS -->
-         <link rel="stylesheet" href="./css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 
-        <!-- Afficher une icône Favicon pour le navigateur -->
-        <link rel="icon" type="image/x-icon" href="./images/cute.png" />
-        <title>Kim-Ngan's Portfolio</title>
-    </head>
+    <!-- Fichier style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 
-    <body>
-        <!-- MENU -->
-        <div class="menu">
-            <div class="container">
-                <div class="menu__left">
-                    <a href="#" id="monLogo">
-                        <img src="./images/logo-2.svg" alt="mon_logo" width="60%" />
-                    </a>
-                </div>
-                <div class="menu__right">
-                    <ul id="menuRight__navLink">
-                        <li>
-                            <a href="#accueil" class="navlink active">Accueil</a>
-                        </li>
-                        <li>
-                            <a href="#interet" class="navlink">Intérêt</a>
-                        </li>
-                        <li>
-                            <a href="#apprentissage" class="navlink">Apprentissage</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/night.png" alt="icon_night" width="45%" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Afficher une icône Favicon pour le navigateur -->
+    <link rel="icon" type="image/x-icon" href="./images/cute.png" />
+    <title>Kim-Ngan's Portfolio</title>
+</head>
+
+<body>
+    <!-- MENU -->
+    <div class="menu">
+        <div class="container">
+            <div class="menu__left">
+                <a href="#" id="monLogo">
+                    <img src="./images/logo-2.svg" alt="mon_logo" width="60%" />
+                </a>
+            </div>
+            <div class="menu__right">
+                <ul id="menuRight__navLink">
+                    <li>
+                        <a href="#accueil" class="navlink active">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#interet" class="navlink">Intérêt</a>
+                    </li>
+                    <li>
+                        <a href="#apprentissage" class="navlink">Apprentissage</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/night.png" alt="icon_night" width="45%" />
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <!-- PRÉSENTATION -->
-        <div class="section accueil">
-            <div class="container">
-                <div class="titre">À propos</div>
-                <div class="accueil__contenu">
-                    <p id="accueil__prenom">Bonjour ! Je suis Kim !</p>
-                    <p class="accueil__texte">Une vietnamienne habitant en France</p>
-                    <p class="accueil__texte">Une étudiante de BUT 2 en Science de Données</p>
-                </div>
+    <!-- PRÉSENTATION -->
+    <div class="section accueil">
+        <div class="container">
+            <div class="titre">À propos</div>
+            <div class="accueil__contenu">
+                <p id="accueil__prenom">Bonjour ! Je suis Kim !</p>
+                <p class="accueil__texte">Une vietnamienne habitant en France</p>
+                <p class="accueil__texte">Une étudiante de BUT 2 en Science de Données</p>
             </div>
         </div>
+    </div>
 
-        <!-- FORMATION -->
-        <div class="section formation">
-            <div class="container">
-                <div class="titre">Formation</div>
-                <div class="timeline">
-                    <div class="timeline__item itemRight">
-                            <div class="itemRight_contenu">
-                                <div class="item__left">
-                                    <div class="itemLeft__formation">
-                                        <p>IUT de Perpignan - Antenne de Carcassonne</p>
-                                        <p>Carcassonne, France</p>
-                                        <p>BUT 2 en Science de Données</p>
-                                    </div>
-                                </div>
-                                <div class="item__right">09/2024 - Présent</div>
-                            </div>
+    <!-- FORMATION -->
+    <div class="section formation">
+        <div class="container">
+            <div class="titre">Formation</div>
+            <div class="timeline">
+                <div class="timeline__section">
+                    <div class="section__time">09/2024 - Présent</div>
+                    <div class="section__content">
+                        <div class="content__line">
+                            <div class="dot"></div>
+                            <div class="line"></div>
                         </div>
+                        <div class="content__desc">
+                            <h3>IUT de Perpignan - Antenne de Carcassonne</h3>
+                            <p><i>Carcassonne, France</i></p>
+                            <p>BUT de Science de Données - 2ième année</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__section">
+                    <div class="section__time">2017 - 2019</div>
+                    <div class="section__content">
+                        <div class="content__line">
+                            <div class="dot"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="content__desc">
+                            <h3>Y School (ex - Groupe ESC Troyes)</h3>
+                            <p><i>Troyes, France</i></p>
+                            <p>Master en Marketing & International Business Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__section">
+                    <div class="section__time">2012 - 2017</div>
+                    <div class="section__content">
+                        <div class="content__line">
+                            <div class="dot"></div>
+                            <div class="line lastLine"></div>
+                        </div>
+                        <div class="content__desc">
+                            <h3>Université Hoa Sen</h3>
+                            <p><i>Ho Chi Minh, Vietnam</i></p>
+                            <p>Bachelor du Commerce international</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-    
-
+    </div>
 
 
-        <!-- Fichier Main JS -->
-        <script src="./js/main.js"></script>
-        
-    </body>
+
+
+
+    <!-- Fichier Main JS -->
+    <script src="./js/main.js"></script>
+
+</body>
 
 </html>
