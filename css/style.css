@@ -276,3 +276,28 @@ body {
   border-radius: 5px;
   background: var(--highlight-color);
 }
+
+/* LANGUES */
+.langues .langues__contenu {
+  margin-top: 50px;
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--secondary-bg-color);
+  border-radius: 10px;
+}
+
+.langues .langues__contenu .langues__item {
+  text-align: center;
+}
+
+.langues__contenu .langues__item .item__lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.langues__item .item__lang img {
+  padding-left: 10px;
+}
