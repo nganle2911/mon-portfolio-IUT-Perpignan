@@ -301,3 +301,32 @@ body {
 .langues__item .item__lang img {
   padding-left: 10px;
 }
+
+/* FOOTER (PIED) */
+.footer {
+  background: var(--highlight-color);
+  opacity: 0.9;
+  margin-top: 100px;
+}
+
+.footer .footer__contenu {
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+  font-family: var(--font-title);
+  font-size: 18px;
+}
+
+.footer__contenu .footer__merci {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__contenu .footer__merci img {
+  width: 40px;
+  padding-left: 10px;
+}
+
+.footer .footer__contenu .footer__signature {
+  padding-top: 20px;
+}
