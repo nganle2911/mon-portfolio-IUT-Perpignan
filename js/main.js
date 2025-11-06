@@ -1,5 +1,5 @@
 // NAVBAR 
-// Ajouter la classe "active" au bouton actuel
+// TODO: Ajouter la classe "active" au bouton actuel
 var menu = document.getElementById("menuRight__navLink");
 var elements = menu.getElementsByClassName("navlink");
 
@@ -35,7 +35,7 @@ const listeComp = [
     }
 ];
 
-// Afficher des compétences sur HTML en utilisant JS
+// TODO: Afficher des compétences sur HTML en utilisant JS
 function afficherListeComp() {
     let contenuHTML = "";
 
@@ -59,3 +59,32 @@ function afficherListeComp() {
 }
 
 afficherListeComp();
+
+// BUTTONS
+var monBtnHome = document.getElementById("btn-backHome");
+var monBtnTop = document.getElementById("btn-backTop");
+
+// Les 2 boutons "revenir en haut" & "revenir à l'accueil" apparaissent lorsqu'on fait défiler vers le bas de 150px 
+function afficherBouton() {
+    if ((document.body.scrollTop > 150) || (document.documentElement.scrollTop > 150)) {
+        monBtnHome.style.display = "block";
+        monBtnTop.style.display = "block";
+    } else {
+        monBtnHome.style.display = "none";
+        monBtnTop.style.display = "none";
+    }
+}
+
+// Quand on fait défiler la page, les boutons s'affichent 
+window.onscroll = () => { afficherBouton() };
+
+// TODO: Revenir à la page d'accueil
+function revenirAccueil() {
+    window.location.href = "index.html";
+}
+
+// TODO: Revenir en haut 
+function revenirEnHaut() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

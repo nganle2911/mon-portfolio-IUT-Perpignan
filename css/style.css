@@ -342,3 +342,30 @@ body {
 .footer .footer__contenu .footer__signature {
   padding-top: 20px;
 }
+
+/* BUTTONS (revenir à la page d'accueil & revenir en haut) */
+.boutons {
+  display: flex;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.boutons .btn {
+  display: none;
+}
+
+.boutons .bouton__home {
+  margin-right: 10px;
+}
+
+.boutons button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 2px solid var(--primary-bg-color);
+  background: var(--highlight-color);
+  color: var(--primary-bg-color);
+}
