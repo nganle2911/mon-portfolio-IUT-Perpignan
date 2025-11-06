@@ -478,3 +478,31 @@ body.page-apprenti {
   color: var(--primary-text-color);
   font-size: 18px;
 }
+
+/* HISTOIRE */
+.histoire .histoire__contenu {
+  padding: 50px 0;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* MATÉRIELS */
+.materiels {
+  padding-top: 0;
+}
+
+.materiels .titre {
+  width: 14%;
+}
+
+/* PARCOURS */
+
+/* AVANTAGES */
+
+/* CONSEILS */
+.conseils .titre {
+  width: 17%;
+}
+
+/* GALERIES */
