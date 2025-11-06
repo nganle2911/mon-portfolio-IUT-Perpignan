@@ -25,7 +25,7 @@
     <title>Kim-Ngan's Portfolio</title>
 </head>
 
-<body>
+<body class="page-accueil">
     <!-- NAVBAR MENU -->
     <div class="menu">
         <div class="container">
@@ -194,15 +194,19 @@
 
     <!-- BUTTONS (revenir à la page d'accueil & revenir en haut) -->
     <div class="boutons">
-        <div class="btn bouton__home" id="btn-backHome" onclick="revenirAccueil()">
-            <button id="back-home">
+        <div id="btn-backHome" class="btn bouton__home" onclick="revenirAccueil()">
+            <button type="button" id="back-home">
                 <i class=" fa-solid fa-house"></i>
             </button>
+            <span class="tooltip">Retour accueil</span>
+            <span class="triangle"></span>
         </div>
         <div class="btn bouton__up" id="btn-backTop" onclick="revenirEnHaut()">
             <button id="back-top">
                 <i class="fa-solid fa-chevron-up"></i>
             </button>
+            <span class="tooltip">Haut</span>
+            <span class="triangle"></span>
         </div>
     </div>
 

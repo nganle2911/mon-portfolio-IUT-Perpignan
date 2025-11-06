@@ -8,15 +8,8 @@
   --font-text: "Playfair Display", serif;
 }
 
-/* --------------------------------------------------------------- */
-/* PAGE D'ACCUEIL */
-/* Image de fond fixe */
+/* Configuration générale */
 body {
-  background-image: url("../images/bg-2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-
   /* Polices pour des textes */
   font-family: var(--font-text);
   font-style: normal;
@@ -26,6 +19,16 @@ body {
 .container {
   max-width: 1320px;
   margin: auto;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* PAGE D'ACCUEIL */
+/* Image de fond fixe uniquement pour la page d'accueil */
+body.page-accueil {
+  background-image: url("../images/bg-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* MENU */
@@ -353,6 +356,7 @@ body {
 
 .boutons .btn {
   display: none;
+  position: relative;
 }
 
 .boutons .bouton__home {
@@ -370,5 +374,92 @@ body {
   color: var(--primary-bg-color);
 }
 
-/* --------------------------------------------------------------- */
+/* Tooltips pour les boutons */
+.boutons .btn .tooltip {
+  display: none;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--secondary-bg-color);
+  color: var(--highlight-color);
+}
+
+.boutons .btn .triangle {
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid var(--secondary-bg-color);
+}
+
+.bouton__home .tooltip {
+  display: none;
+  width: 120px;
+  top: -30px;
+  left: -40px;
+}
+
+.bouton__home .triangle {
+  top: -10px;
+  left: 15px;
+}
+
+.bouton__up .tooltip {
+  width: 50px;
+  top: -30px;
+  left: -4px;
+}
+
+.bouton__up .triangle {
+  top: -10px;
+  left: 15px;
+}
+
+.bouton__home:hover .tooltip,
+.bouton__home:hover .triangle,
+.bouton__up:hover .tooltip,
+.bouton__up:hover .triangle {
+  display: block;
+  transition: all 0.5s ease;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Configuration générale pour 2 pages: interet.html & apprentissage.html */
+/* Background color pour les pages interet.html & apprentissage.html */
+body.page-interet,
+body.page-apprenti {
+  /* background-color: var(--primary-bg-color); */
+  background-image: url("../images/bg-3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.titrePage {
+  padding-top: 100px;
+}
+
+.titrePage h1 {
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  color: var(--highlight-color);
+  font-weight: 500;
+}
+
+.titrePage .titrePage__items {
+  position: relative;
+}
+
+.titrePage .soulignement {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: var(--highlight-color);
+  bottom: 65px;
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* PAGE D'INTÉRÊT */

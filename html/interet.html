@@ -25,22 +25,22 @@
     <title>Kim-Ngan's Portfolio</title>
 </head>
 
-<body>
+<body class="page-interet">
     <!-- NAVBAR MENU -->
     <div class="menu">
         <div class="container">
             <div class="menu__left">
-                <a href="../index.html" id="monLogo">
+                <a href="#" id="monLogo">
                     <img src="../images/logo-1.svg" alt="mon_logo" width="60%" />
                 </a>
             </div>
             <div class="menu__right">
                 <ul id="menuRight__navLink">
                     <li>
-                        <a href="../index.html" class="navlink active">Accueil</a>
+                        <a href="../index.html" class="navlink">Accueil</a>
                     </li>
                     <li>
-                        <a href="#" class="navlink">Intérêt</a>
+                        <a href="#" class="navlink active">Intérêt</a>
                     </li>
                     <li>
                         <a href="./apprentissage.html" class="navlink">Apprentissage</a>
@@ -54,6 +54,15 @@
             </div>
         </div>
     </div>
+
+    <!-- TITRE DE LA PAGE -->
+    <div class="section titrePage">
+        <div class="container titrePage__items">
+            <h1>intérêt - la radonnée</h1>
+            <div class="soulignement"></div>
+        </div>
+    </div>
+
 
 
 
@@ -82,15 +91,19 @@
 
     <!-- BUTTONS (revenir à la page d'accueil & revenir en haut) -->
     <div class="boutons">
-        <div class="btn bouton__home" id="btn-backHome" onclick="revenirAccueil()">
-            <button id="back-home">
+        <div id="btn-backHome" class="btn bouton__home" onclick="revenirAccueil()">
+            <button type="button" id="back-home">
                 <i class=" fa-solid fa-house"></i>
             </button>
+            <span class="tooltip">Retour accueil</span>
+            <span class="triangle"></span>
         </div>
         <div class="btn bouton__up" id="btn-backTop" onclick="revenirEnHaut()">
             <button id="back-top">
                 <i class="fa-solid fa-chevron-up"></i>
             </button>
+            <span class="tooltip">Haut</span>
+            <span class="triangle"></span>
         </div>
     </div>
 
