@@ -434,11 +434,12 @@ body.page-apprenti {
   background-image: url("../images/bg-3.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 .titrePage {
   padding-top: 100px;
+  padding-bottom: 0;
 }
 
 .titrePage h1 {
@@ -450,6 +451,7 @@ body.page-apprenti {
 
 .titrePage .titrePage__items {
   position: relative;
+  padding-bottom: 0;
 }
 
 .titrePage .soulignement {
@@ -458,8 +460,21 @@ body.page-apprenti {
   width: 100%;
   height: 3px;
   background: var(--highlight-color);
-  bottom: 65px;
+  bottom: -5px;
 }
 
 /* ------------------------------------------------------------------------------------- */
 /* PAGE D'INTÉRÊT */
+.sommaire {
+  padding: 20px 0;
+}
+
+.sommaire__contenu h2 {
+  color: var(--primary-text-color);
+}
+
+.sommaire__contenu .sommaire__liste a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 18px;
+}
