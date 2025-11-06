@@ -295,6 +295,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background: var(--secondary-bg-color);
+  opacity: 0.9;
   border-radius: 10px;
 }
 
