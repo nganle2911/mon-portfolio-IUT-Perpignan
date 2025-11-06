@@ -84,15 +84,14 @@ body {
   animation-duration: 5s;
 }
 
-/* PRÉSENTATION */
+/* Configuration générale pour la partie de section et titre */
 .section {
   padding: 50px 0;
   color: var(--primary-text-color);
 }
 
-.accueil {
-  margin-top: 95px;
-  height: 100vh;
+.section .container {
+  padding: 50px 0;
 }
 
 .section .titre {
@@ -110,12 +109,16 @@ body {
   font-weight: bold;
 }
 
-.section .container {
-  padding: 50px 0;
+/* PRÉSENTATION */
+.accueil {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
 }
 
-.accueil .accueil__contenu {
-  padding-top: 50px;
+.accueil .accueil__item {
+  width: 100%;
 }
 
 /* Création d'un effet de frappe (typing effect) avec CSS */
@@ -169,6 +172,14 @@ body {
 }
 
 /* FORMATION */
+.formation {
+  padding-top: 0;
+}
+
+.formation .container {
+  padding-top: 0;
+}
+
 .formation .timeline {
   padding-top: 50px;
 }
