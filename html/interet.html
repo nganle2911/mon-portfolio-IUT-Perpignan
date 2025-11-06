@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Fichier style CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Ajouter FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Afficher une icône Favicon pour le navigateur -->
+    <link rel="icon" type="image/x-icon" href="../images/cute.png" />
+    <title>Kim-Ngan's Portfolio</title>
+</head>
+
+<body>
+    <!-- NAVBAR MENU -->
+    <div class="menu">
+        <div class="container">
+            <div class="menu__left">
+                <a href="../index.html" id="monLogo">
+                    <img src="../images/logo-1.svg" alt="mon_logo" width="60%" />
+                </a>
+            </div>
+            <div class="menu__right">
+                <ul id="menuRight__navLink">
+                    <li>
+                        <a href="../index.html" class="navlink active">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navlink">Intérêt</a>
+                    </li>
+                    <li>
+                        <a href="./apprentissage.html" class="navlink">Apprentissage</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/night.png" alt="icon_night" width="45%" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER (PIED) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contenu">
+                <div class="footer__merci">
+                    <p>Merci d'avoir visité mon portfolio</p>
+                    <div>
+                        <img src="../images/sign.png" alt="thank-you">
+                    </div>
+                </div>
+                <div class="footer__made">
+                    Créée avec
+                    <<i class="fa-solid fa-laptop-code"></i> />
+                        , <<i class="fa-solid fa-mug-hot"></i> />
+                            et <<i class="fa-solid fa-headphones"></i> />
+                </div>
+                <div class="footer__signature">
+                    <img src="../images/logo-3.svg" alt="kim-ngan" width="250px">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BUTTONS (revenir à la page d'accueil & revenir en haut) -->
+    <div class="boutons">
+        <div class="btn bouton__home" id="btn-backHome" onclick="revenirAccueil()">
+            <button id="back-home">
+                <i class=" fa-solid fa-house"></i>
+            </button>
+        </div>
+        <div class="btn bouton__up" id="btn-backTop" onclick="revenirEnHaut()">
+            <button id="back-top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Fichier Main JS -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

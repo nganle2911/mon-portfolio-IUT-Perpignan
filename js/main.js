@@ -1,3 +1,5 @@
+/* --------------------------------------------------------------- */
+/* PAGE D'ACCUEIL */
 // NAVBAR 
 // TODO: Ajouter la classe "active" au bouton actuel
 var menu = document.getElementById("menuRight__navLink");
