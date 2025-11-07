@@ -14,6 +14,7 @@ body {
   font-family: var(--font-text);
   font-style: normal;
   font-size: 16px;
+  color: var(--primary-text-color);
 }
 
 .container {
@@ -430,11 +431,11 @@ body.page-accueil {
 /* Background color pour les pages interet.html & apprentissage.html */
 body.page-interet,
 body.page-apprenti {
-  /* background-color: var(--primary-bg-color); */
-  background-image: url("../images/bg-3.svg");
+  background-color: var(--primary-bg-color);
+  /* background-image: url("../images/bg-3.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .titrePage {
@@ -463,14 +464,30 @@ body.page-apprenti {
   bottom: -5px;
 }
 
-/* ------------------------------------------------------------------------------------- */
-/* PAGE D'INTÉRÊT */
-.sommaire {
-  padding: 20px 0;
+h2 {
+  color: var(--primary-text-color);
+  font-family: var(--font-text);
 }
 
-.sommaire__contenu h2 {
-  color: var(--primary-text-color);
+/* ------------------------------------------------------------------------------------- */
+/* PAGE D'INTÉRÊT */
+
+/* PRÉSENTATION */
+.presentation {
+  padding-top: 0;
+}
+
+.presentation .presentation__contenu {
+  padding-top: 10px;
+}
+
+.presentation__contenu p {
+  text-align: justify;
+}
+
+/* TABLE DE MATIÈRES */
+.sommaire {
+  padding: 20px 0;
 }
 
 .sommaire__contenu .sommaire__liste a {
