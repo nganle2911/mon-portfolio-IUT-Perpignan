@@ -523,3 +523,22 @@ h2 {
 }
 
 /* GALERIES */
+
+/* ------------------------------------------------------------------------------------- */
+/* PAGE D'APPRENTISSAGE */
+
+/* PRÉSENTATION */
+.presentation .presentation__contenu a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.presentation .presentation__contenu a:hover {
+  color: var(--highlight-color);
+  transition: all 0.3s ease-in-out;
+}
+
+/* DU COURS R3.03 */
+.cours .titre {
+  width: 24%;
+}
