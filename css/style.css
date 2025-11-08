@@ -538,7 +538,17 @@ h2 {
   transition: all 0.3s ease-in-out;
 }
 
+/* Configurations générales pour "Du cours R3.03" & "Du portfolio" */
+.partie__titre {
+  text-transform: uppercase;
+}
+
 /* DU COURS R3.03 */
 .cours .titre {
   width: 24%;
+}
+
+/* DU PORTFOLIO */
+.portfolio .titre {
+  width: 31%;
 }
