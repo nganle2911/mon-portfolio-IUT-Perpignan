@@ -1,28 +1,28 @@
 /* ------------------------------------------------------------------------------------- */
 /* PAGE D'ACCUEIL */
-// COMPÉTENCES
-const listeComp = [
-    {
-        nom: "HTML/CSS",
-        valeur: 75
-    },
-    {
-        nom: "JavaScript",
-        valeur: 60
-    },
-    {
-        nom: "Python",
-        valeur: 65
-    },
-    {
-        nom: "Power BI",
-        valeur: 70
-    },
-    {
-        nom: "R",
-        valeur: 55
-    }
-];
+// COMPÉTENCES V1
+// const listeComp = [
+//     {
+//         nom: "HTML/CSS",
+//         valeur: 75
+//     },
+//     {
+//         nom: "JavaScript",
+//         valeur: 60
+//     },
+//     {
+//         nom: "Python",
+//         valeur: 65
+//     },
+//     {
+//         nom: "Power BI",
+//         valeur: 70
+//     },
+//     {
+//         nom: "R",
+//         valeur: 55
+//     }
+// ];
 
 // TODO: Afficher des compétences sur HTML en utilisant JS
 // function afficherListeComp() {
@@ -56,6 +56,48 @@ const listeComp = [
 // }
 
 // afficherListeComp();
+
+// COMPÉTENCES V2
+const listeCompetences = {
+    langage: [
+        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+    ],
+    bdd: [
+        {nom: "PostgreSQL", valeur: 45}, {nom: "MySQL", valeur: 40}, {nom: "Access", valeur: 30}
+    ],
+    dev: [
+        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+    ],
+    sig: [
+        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+    ],
+    dataviz: [
+        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+    ],
+    graphique: [
+        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+    ],
+    autres: [
+        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+    ]
+};
+
+// TODO: 
+
+// TODO: Afficher des compétences sur HTML en utilisant JS
+function afficherListeComptetences() {
+    let contenuHTML = "";
+
+    // console.log("Bonjour clique duoc roi ne")
+    let valeurChoisie = document.getElementById("aptitudes").value;
+    let leContenu = document.getElementById("skills__contenu");
+    console.log(valeurChoisie)
+
+    // loop through object listeComptetences
+    for (cle in listeCompetences) {
+        
+    }
+}
 
 // BUTTONS
 const monBtnHome = document.getElementById("btn-backHome");

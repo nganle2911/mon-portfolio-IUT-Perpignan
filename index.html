@@ -154,15 +154,35 @@
                     <select name="aptitudes" id="aptitudes">
                         <option value="langage" selected="selected">Langages</option>
                         <option value="bdd">Bases de données</option>
-                        <option value="dev-web">Développement Web</option>
+                        <option value="dev">Développement Web</option>
                         <option value="sig">SIG & analyse spatiale</option>
                         <option value="dataviz">Outils de Dataviz</option>
                         <option value="graphique">Graphiques</option>
                         <option value="autres">Autres</option>
                     </select>
-                    <button type="button" class="apt__consulter">Consulter</button>
+                    <button type="button" class="apt__consulter" onclick="afficherListeComptetences()">Consulter</button>
                 </div>
-                <div id="skills__contenu" class="skills__contenu"></div>
+                <div id="skills__contenu" class="skills__contenu">
+                    <!-- Afficher html ici en utilisant JS -->
+                    <div class="skills__item">
+                        <div class="skillsItem__content">
+                            <p>Skill</p>
+                            <p>Percent %</p>
+                        </div>                    
+                        <div class="skillsItem__bar">
+                            <div class="bar__value" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skillsItem__content">
+                            <p>Skill</p>
+                            <p>Percent %</p>
+                        </div>                    
+                        <div class="skillsItem__bar">
+                            <div class="bar__value" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
