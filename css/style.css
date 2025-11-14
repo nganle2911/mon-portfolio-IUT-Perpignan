@@ -85,7 +85,7 @@ body.page-accueil {
 
 .menu .container .menu__right ul a:hover {
   color: var(--highlight-color);
-  animation-duration: 5s;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Configuration générale pour la partie de section et titre */

@@ -1,18 +1,5 @@
 /* ------------------------------------------------------------------------------------- */
 /* PAGE D'ACCUEIL */
-// NAVBAR 
-// TODO: Ajouter la classe "active" au bouton actuel
-const menu = document.getElementById("menuRight__navLink");
-const elements = menu.getElementsByClassName("navlink");
-
-for (let i = 0; i < elements.length; i++) {
-    elements[i].addEventListener("click", function () {
-        let actuel = document.getElementsByClassName("active");
-        actuel[0].className = actuel[0].className.replace(" active", "");
-        this.className += " active";
-    })
-}
-
 // COMPÉTENCES
 const listeComp = [
     {
