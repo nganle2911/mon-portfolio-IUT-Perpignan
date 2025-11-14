@@ -375,6 +375,13 @@ body.page-accueil {
   color: var(--primary-bg-color);
 }
 
+.boutons button:hover {
+  border: 2px solid var(--highlight-color);
+  background: var(--primary-bg-color);
+  color: var(--highlight-color);
+  transition: all 0.3s ease;
+}
+
 /* Tooltips pour les boutons */
 .boutons .btn .tooltip {
   display: none;
