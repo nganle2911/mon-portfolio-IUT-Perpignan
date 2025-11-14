@@ -249,12 +249,12 @@ body.page-accueil {
   font-size: 18px;
 }
 
-/* COMPÉTENCES */
+/* COMPÉTENCES V1 */
 .section.competences .titre {
   width: 8%;
 }
 
-.skills {
+/* .skills {
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px 30px;
@@ -290,6 +290,51 @@ body.page-accueil {
   height: 10px;
   border-radius: 5px;
   background: var(--highlight-color);
+} */
+
+/* COMPÉTENCES V2 */
+.skills {
+  padding-top: 50px;
+  width: 65%;
+}
+
+.skills__texte {
+  font-size: 18px;
+}
+
+.skills__listeDeroulante {
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills__listeDeroulante label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.skills__listeDeroulante select {
+  margin-right: 30px;
+  height: 30px;
+}
+
+.skills__listeDeroulante .apt__consulter {
+  background-color: var(--highlight-color);
+  border: 2px solid var(--highlight-color);
+  border-radius: 10px;
+  color: var(--primary-bg-color);
+  font-family: var(--font-title);
+  font-size: 18px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+.skills__listeDeroulante .apt__consulter:hover {
+  background-color: var(--primary-bg-color);
+  color: var(--highlight-color);
+  border: 2px solid var(--highlight-color);
+  transition: all 0.3s ease;
 }
 
 /* LANGUES */

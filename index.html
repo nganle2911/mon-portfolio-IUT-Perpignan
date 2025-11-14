@@ -120,10 +120,10 @@
     </div>
 
     <!-- COMPÉTENCES -->
-    <div class="section competences">
+    <!-- <div class="section competences">
         <div class="container">
             <div class="titre">Compétences</div>
-            <div class="skills" id="skills">
+            <div class="skills" id="skills"> -->
 
                 <!-- Afficher html ici en utilisant JS -->
                 <!-- <div class="skills__item">
@@ -135,6 +135,34 @@
                         <div class="bar__value" style="width: 85%;"></div>
                     </div>
                 </div> -->
+            <!-- </div>
+        </div>
+    </div> -->
+
+    <!-- COMPÉTENCES - V2 -->
+    <div class="section competences">
+        <div class="container">
+            <div class="titre">Compétences</div>
+            <div class="skills" id="skills">
+                <p class="skills__texte">
+                    Pour consulter mes compétences, veuillez choisir une catégorie dans la liste déroulante ci-dessous  
+                    <i class="fa-regular fa-hand-point-down"></i>
+                </p>
+                <div class="skills__listeDeroulante">
+                    <label for="aptitudes">Choisir une catégorie: </label>
+                    <!-- Liste déroulante -->
+                    <select name="aptitudes" id="aptitudes">
+                        <option value="langage" selected="selected">Langages</option>
+                        <option value="bdd">Bases de données</option>
+                        <option value="dev-web">Développement Web</option>
+                        <option value="sig">SIG & analyse spatiale</option>
+                        <option value="dataviz">Outils de Dataviz</option>
+                        <option value="graphique">Graphiques</option>
+                        <option value="autres">Autres</option>
+                    </select>
+                    <button type="button" class="apt__consulter">Consulter</button>
+                </div>
+                <div id="skills__contenu" class="skills__contenu"></div>
             </div>
         </div>
     </div>

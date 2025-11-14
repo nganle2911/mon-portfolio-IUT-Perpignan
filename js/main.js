@@ -25,37 +25,37 @@ const listeComp = [
 ];
 
 // TODO: Afficher des compétences sur HTML en utilisant JS
-function afficherListeComp() {
-    let contenuHTML = "";
+// function afficherListeComp() {
+//     let contenuHTML = "";
 
-    listeComp.map((ele, indice) => {
-        // console.log(ele);
+//     listeComp.map((ele, indice) => {
+//         // console.log(ele);
 
-        contenuHTML += `
-            <div class="skills__item">
-                <div class="skillsItem__content">
-                    <p>${ele.nom}</p>
-                    <p>${ele.valeur} %</p>
-                </div>
-                <div class="skillsItem__bar">
-                    <div class="bar__value" style="width: ${ele.valeur}%;"></div>
-                </div>
-            </div>
-        `;
-    });
+//         contenuHTML += `
+//             <div class="skills__item">
+//                 <div class="skillsItem__content">
+//                     <p>${ele.nom}</p>
+//                     <p>${ele.valeur} %</p>
+//                 </div>
+//                 <div class="skillsItem__bar">
+//                     <div class="bar__value" style="width: ${ele.valeur}%;"></div>
+//                 </div>
+//             </div>
+//         `;
+//     });
 
-    // EXPLICATION : Pourquoi faut-il vérifier l'existence de l'élément id="skills" ici ?
-    // eleSkills.innerHTML = contenuHTML => provoque une erreur si on ne vérifie pas son existence avant
-    /* En fait, ce fichier main.js est utilisé en commun pour les 3 pages html, et le script de JS est exécuté de haut en bas, ligne par ligne.
-    Lorsque l'utilisateur ouvre la page interet.html ou la page apprentissage.html, le fichier main.js est automatiquement chargé et exécuté entièrement depuis le début. Cependant, comme il n'existe pas id="skills" dans le page interet.html ou apprentissage.html, eleSkills n'est donc pas retrouvé => eleSkills renvoie donc la valeur null. On ne peut pas définir une propriété sur la valeur null, ce qui provoque une erreur et arrête immédiatement l'exécution du script. Par conséquent, les fonctionnalités des boutons situés en bas ne sont pas exécutées */
+//     // EXPLICATION : Pourquoi faut-il vérifier l'existence de l'élément id="skills" ici ?
+//     // eleSkills.innerHTML = contenuHTML => provoque une erreur si on ne vérifie pas son existence avant
+//     /* En fait, ce fichier main.js est utilisé en commun pour les 3 pages html, et le script de JS est exécuté de haut en bas, ligne par ligne.
+//     Lorsque l'utilisateur ouvre la page interet.html ou la page apprentissage.html, le fichier main.js est automatiquement chargé et exécuté entièrement depuis le début. Cependant, comme il n'existe pas id="skills" dans le page interet.html ou apprentissage.html, eleSkills n'est donc pas retrouvé => eleSkills renvoie donc la valeur null. On ne peut pas définir une propriété sur la valeur null, ce qui provoque une erreur et arrête immédiatement l'exécution du script. Par conséquent, les fonctionnalités des boutons situés en bas ne sont pas exécutées */
 
-    const eleSkills = document.getElementById("skills");
-    if (eleSkills) {
-        eleSkills.innerHTML = contenuHTML;
-    }
-}
+//     const eleSkills = document.getElementById("skills");
+//     if (eleSkills) {
+//         eleSkills.innerHTML = contenuHTML;
+//     }
+// }
 
-afficherListeComp();
+// afficherListeComp();
 
 // BUTTONS
 const monBtnHome = document.getElementById("btn-backHome");
