@@ -132,7 +132,8 @@ body.page-accueil {
     width: 0;
   }
   to {
-    width: 42%;
+    /* width: 43%; */
+    width: 545px;
   }
 }
 
