@@ -66,36 +66,76 @@ const listeCompetences = {
         {nom: "PostgreSQL", valeur: 45}, {nom: "MySQL", valeur: 40}, {nom: "Access", valeur: 30}
     ],
     dev: [
-        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+        {nom: "HTML/CSS", valeur: 70}, {nom: "Bootstrap", valeur: 75}, {nom: "NodeJS", valeur: 45}
     ],
     sig: [
-        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+        {nom: "ArcGIS", valeur: 70}, {nom: "QGIS", valeur: 75}
     ],
     dataviz: [
-        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+        {nom: "Power BI", valeur: 70}, {nom: "Datawrapper", valeur: 75}
     ],
     graphique: [
-        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+        {nom: "Figma", valeur: 70}, {nom: "Photoshop", valeur: 75}, {nom: "Canva", valeur: 45}, {nom: "Illustration", valeur: 35}
     ],
     autres: [
-        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+        {nom: "Git/Github", valeur: 70}, {nom: "Docker", valeur: 75}
     ]
 };
 
-// TODO: 
+// TODO: Afficher le contenu HTML sur skills__contenu
+function htmlAffiche(listeCompChoisie) {
+    var contenuHTML = "";
+
+    listeCompChoisie.map((ele, indice) => {
+        // console.log(ele);
+
+        contenuHTML += `
+            <div class="skills__item">
+                <div class="skillsItem__content">
+                    <p>${ele.nom}</p>
+                    <p>${ele.valeur} %</p>
+                </div>
+                <div class="skillsItem__bar">
+                    <div class="bar__value" style="width: ${ele.valeur}%;"></div>
+                </div>
+            </div>
+        `;
+    });
+
+    document.getElementById("skills__contenu").innerHTML = contenuHTML;
+}
 
 // TODO: Afficher des compétences sur HTML en utilisant JS
 function afficherListeComptetences() {
-    let contenuHTML = "";
-
-    // console.log("Bonjour clique duoc roi ne")
-    let valeurChoisie = document.getElementById("aptitudes").value;
-    let leContenu = document.getElementById("skills__contenu");
+    var valeurChoisie = document.getElementById("aptitudes").value;
     console.log(valeurChoisie)
+    
 
-    // loop through object listeComptetences
-    for (cle in listeCompetences) {
-        
+    switch (valeurChoisie) {
+        case "langage":
+            htmlAffiche(listeCompetences["langage"]);
+            break;
+        case "bdd":
+            htmlAffiche(listeCompetences["bdd"]);
+            break;
+        case "dev":
+            htmlAffiche(listeCompetences["dev"]);
+            break;
+        case "sig":
+            htmlAffiche(listeCompetences["sig"]);
+            break;
+        case "dataviz":
+            htmlAffiche(listeCompetences["dataviz"]);
+            break;
+        case "graphique":
+            htmlAffiche(listeCompetences["graphique"]);
+            break;
+        case "autres":
+            htmlAffiche(listeCompetences["autres"]);
+            break;
+        default:
+            htmlAffiche(listeCompetences["langage"]);
+            break;
     }
 }
 
