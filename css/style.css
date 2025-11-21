@@ -573,6 +573,10 @@ h2 {
 }
 
 /* HISTOIRE */
+.histoire {
+ padding-bottom: 0;
+}
+
 .histoire .container {
   padding-bottom: 0;
 }
@@ -608,6 +612,20 @@ h2 {
 /* MATÉRIELS */
 .materiels .titre {
   width: 14%;
+}
+
+.materiel__contenu .materiel__liste {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.materiel__article .article__img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 2px solid var(--highlight-color);
 }
 
 /* PARCOURS */
