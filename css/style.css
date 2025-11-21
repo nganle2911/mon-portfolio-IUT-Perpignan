@@ -587,6 +587,11 @@ h2 {
   font-size: 18px;
 }
 
+.sommaire__contenu .sommaire__liste a:hover {
+  color: var(--highlight-color);
+  transition: all 0.3s ease;
+}
+
 /* HISTOIRE */
 .histoire .histoire__contenu {
   padding: 50px 0;

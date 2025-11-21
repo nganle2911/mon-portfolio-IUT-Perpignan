@@ -102,12 +102,18 @@ function htmlAffiche(listeCompChoisie) {
         `;
     });
 
-    document.getElementById("skills__contenu").innerHTML = contenuHTML;
+    const skillsContenu = document.getElementById("skills__contenu");
+    if (skillsContenu) {
+        skillsContenu.innerHTML = contenuHTML;
+    }
 }
 
 // TODO: Afficher des compétences sur HTML en utilisant JS
 function afficherListeComptetences() {
-    var valeurChoisie = document.getElementById("aptitudes").value;
+    const aptitudesElement = document.getElementById("aptitudes");
+    if (!aptitudesElement) return;
+    
+    var valeurChoisie = aptitudesElement.value;
     console.log(valeurChoisie)
     
 
@@ -139,12 +145,14 @@ function afficherListeComptetences() {
     }
 }
 
-// BUTTONS
-const monBtnHome = document.getElementById("btn-backHome");
-const monBtnTop = document.getElementById("btn-backTop");
+// BUTTONS - Variables déclarées globalement mais initialisées après le chargement du DOM
+let monBtnHome;
+let monBtnTop;
 
 // Les 2 boutons "revenir en haut" & "revenir à l'accueil" apparaissent lorsqu'on fait défiler vers le bas de 150px 
 function afficherBouton() {
+    if (!monBtnHome || !monBtnTop) return;
+    
     if ((document.body.scrollTop > 150) || (document.documentElement.scrollTop > 150)) {
         monBtnHome.style.display = "block";
         monBtnTop.style.display = "block";
@@ -154,8 +162,15 @@ function afficherBouton() {
     }
 }
 
-// Quand on fait défiler la page, les boutons s'affichent 
-window.onscroll = () => { afficherBouton() };
+// Attendre que le DOM soit complètement chargé avant d'accéder aux éléments
+document.addEventListener("DOMContentLoaded", function() {
+    // Initialiser les références aux boutons
+    monBtnHome = document.getElementById("btn-backHome");
+    monBtnTop = document.getElementById("btn-backTop");
+
+    // Quand on fait défiler la page, les boutons s'affichent 
+    window.onscroll = () => { afficherBouton() };
+});
 
 // TODO: Revenir à la page d'accueil
 function revenirAccueil() {
