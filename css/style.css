@@ -1,4 +1,4 @@
-/* Variables globales pour le style CSS */
+/* Des variables globales pour le style CSS */
 :root {
   --primary-bg-color: #faf7f0;
   --secondary-bg-color: #d8d2c2;
@@ -8,7 +8,7 @@
   --font-text: "Playfair Display", serif;
 }
 
-/* Configuration générale */
+/* La configuration générale pour l'ensemble du site */
 body {
   /* Polices pour des textes */
   font-family: var(--font-text);
@@ -21,6 +21,8 @@ body {
   max-width: 1320px;
   margin: auto;
 }
+
+/* FIN de la configuration générale pour l'ensemble du site */
 
 /* ------------------------------------------------------------------------------------- */
 /* PAGE D'ACCUEIL */
@@ -517,9 +519,11 @@ body.page-accueil {
   transition: all 0.5s ease;
 }
 
+/* FIN de la page d'accueil */
+
 /* ------------------------------------------------------------------------------------- */
-/* Configuration générale pour 2 pages: interet.html & apprentissage.html */
-/* Background color pour les pages interet.html & apprentissage.html */
+/* La configuration générale pour 2 pages: interet.html & apprentissage.html */
+/* Le couleur du fond pour les pages interet.html & apprentissage.html */
 body.page-interet,
 body.page-apprenti {
   background-color: var(--primary-bg-color);
@@ -529,6 +533,7 @@ body.page-apprenti {
   background-attachment: fixed; */
 }
 
+/* TITRE DE LA PAGE */
 .titrePage {
   padding-top: 100px;
   padding-bottom: 0;
@@ -560,9 +565,6 @@ h2 {
   font-family: var(--font-text);
 }
 
-/* ------------------------------------------------------------------------------------- */
-/* PAGE D'INTÉRÊT */
-
 /* PRÉSENTATION */
 .presentation {
   padding: 0;
@@ -574,6 +576,25 @@ h2 {
 
 .presentation__contenu p {
   text-align: justify;
+}
+
+/* Le style de section */
+.section__contenu {
+  padding: 50px 0;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* FIN de la configuration générale pour 2 pages: interet.html & apprentissage.html */
+
+/* ------------------------------------------------------------------------------------- */
+/* PAGE D'INTÉRÊT */
+
+/* PRÉSENTATION */
+.presentation .presentation__contenu .texte__rando {
+  color: var(--highlight-color);
+  text-transform: uppercase;
 }
 
 /* TABLE DE MATIÈRES */
@@ -593,15 +614,19 @@ h2 {
 }
 
 /* HISTOIRE */
-.histoire .histoire__contenu {
-  padding: 50px 0;
-  width: 80%;
-  margin: 0 auto;
-  text-align: justify;
-}
-
 .histoire .container {
   padding-bottom: 0;
+}
+
+.histoire__contenu .marche-nordique {
+  text-decoration: none;
+  color: var(--highlight-color);
+  font-style: italic;
+}
+
+.histoire__liste .histoire__app .img__app {
+  width: 10%;
+  float: right;
 }
 
 /* MATÉRIELS */
@@ -619,6 +644,8 @@ h2 {
 }
 
 /* GALERIES */
+
+/* FIN de la page d'intérêt */
 
 /* ------------------------------------------------------------------------------------- */
 /* PAGE D'APPRENTISSAGE */
@@ -648,3 +675,5 @@ h2 {
 .portfolio .titre {
   width: 31%;
 }
+
+/* FIN de la page d'apprentissage */
