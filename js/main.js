@@ -1,63 +1,5 @@
-/* ------------------------------------------------------------------------------------- */
-/* PAGE D'ACCUEIL */
-// COMPÉTENCES V1
-// const listeComp = [
-//     {
-//         nom: "HTML/CSS",
-//         valeur: 75
-//     },
-//     {
-//         nom: "JavaScript",
-//         valeur: 60
-//     },
-//     {
-//         nom: "Python",
-//         valeur: 65
-//     },
-//     {
-//         nom: "Power BI",
-//         valeur: 70
-//     },
-//     {
-//         nom: "R",
-//         valeur: 55
-//     }
-// ];
-
-// TODO: Afficher des compétences sur HTML en utilisant JS
-// function afficherListeComp() {
-//     let contenuHTML = "";
-
-//     listeComp.map((ele, indice) => {
-//         // console.log(ele);
-
-//         contenuHTML += `
-//             <div class="skills__item">
-//                 <div class="skillsItem__content">
-//                     <p>${ele.nom}</p>
-//                     <p>${ele.valeur} %</p>
-//                 </div>
-//                 <div class="skillsItem__bar">
-//                     <div class="bar__value" style="width: ${ele.valeur}%;"></div>
-//                 </div>
-//             </div>
-//         `;
-//     });
-
-//     // EXPLICATION : Pourquoi faut-il vérifier l'existence de l'élément id="skills" ici ?
-//     // eleSkills.innerHTML = contenuHTML => provoque une erreur si on ne vérifie pas son existence avant
-//     /* En fait, ce fichier main.js est utilisé en commun pour les 3 pages html, et le script de JS est exécuté de haut en bas, ligne par ligne.
-//     Lorsque l'utilisateur ouvre la page interet.html ou la page apprentissage.html, le fichier main.js est automatiquement chargé et exécuté entièrement depuis le début. Cependant, comme il n'existe pas id="skills" dans le page interet.html ou apprentissage.html, eleSkills n'est donc pas retrouvé => eleSkills renvoie donc la valeur null. On ne peut pas définir une propriété sur la valeur null, ce qui provoque une erreur et arrête immédiatement l'exécution du script. Par conséquent, les fonctionnalités des boutons situés en bas ne sont pas exécutées */
-
-//     const eleSkills = document.getElementById("skills");
-//     if (eleSkills) {
-//         eleSkills.innerHTML = contenuHTML;
-//     }
-// }
-
-// afficherListeComp();
-
-// COMPÉTENCES V2
+// PAGE D'ACCUEIL
+// COMPÉTENCES 
 const listeCompetences = {
     langage: [
         {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
@@ -102,21 +44,14 @@ function htmlAffiche(listeCompChoisie) {
         `;
     });
 
-    const skillsContenu = document.getElementById("skills__contenu");
-    if (skillsContenu) {
-        skillsContenu.innerHTML = contenuHTML;
-    }
+    document.getElementById("skills__contenu").innerHTML = contenuHTML;
 }
 
 // TODO: Afficher des compétences sur HTML en utilisant JS
 function afficherListeComptetences() {
-    const aptitudesElement = document.getElementById("aptitudes");
-    if (!aptitudesElement) return;
+    var valeurChoisie = document.getElementById("aptitudes").value;
+    // console.log(valeurChoisie)
     
-    var valeurChoisie = aptitudesElement.value;
-    console.log(valeurChoisie)
-    
-
     switch (valeurChoisie) {
         case "langage":
             htmlAffiche(listeCompetences["langage"]);
@@ -145,14 +80,12 @@ function afficherListeComptetences() {
     }
 }
 
-// BUTTONS - Variables déclarées globalement mais initialisées après le chargement du DOM
-let monBtnHome;
-let monBtnTop;
+// BUTTONS
+const monBtnHome = document.getElementById("btn-backHome");
+const monBtnTop = document.getElementById("btn-backTop");
 
 // Les 2 boutons "revenir en haut" & "revenir à l'accueil" apparaissent lorsqu'on fait défiler vers le bas de 150px 
 function afficherBouton() {
-    if (!monBtnHome || !monBtnTop) return;
-    
     if ((document.body.scrollTop > 150) || (document.documentElement.scrollTop > 150)) {
         monBtnHome.style.display = "block";
         monBtnTop.style.display = "block";
@@ -162,15 +95,8 @@ function afficherBouton() {
     }
 }
 
-// Attendre que le DOM soit complètement chargé avant d'accéder aux éléments
-document.addEventListener("DOMContentLoaded", function() {
-    // Initialiser les références aux boutons
-    monBtnHome = document.getElementById("btn-backHome");
-    monBtnTop = document.getElementById("btn-backTop");
-
-    // Quand on fait défiler la page, les boutons s'affichent 
-    window.onscroll = () => { afficherBouton() };
-});
+// Quand on fait défiler la page, les boutons s'affichent 
+window.onscroll = () => { afficherBouton() };
 
 // TODO: Revenir à la page d'accueil
 function revenirAccueil() {

@@ -251,51 +251,11 @@ body.page-accueil {
   font-size: 18px;
 }
 
-/* COMPÉTENCES V1 */
+/* COMPÉTENCES */
 .section.competences .titre {
   width: 8%;
 }
 
-/*
-.skills {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 10px 30px;
-  padding-top: 50px;
-  width: 65%;
-}
-
-.skills .skillsItem__content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.skills .skillsItem__content p {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.skills .skillsItem__content p:nth-child(2) {
-  color: var(--highlight-color);
-}
-
-.skills__item .skillsItem__bar {
-  position: relative;
-  width: 100%;
-  height: 10px;
-  border-radius: 5px;
-  background: var(--secondary-bg-color);
-}
-
-.skillsItem__bar .bar__value {
-  position: absolute;
-  content: "";
-  height: 10px;
-  border-radius: 5px;
-  background: var(--highlight-color);
-} */
-
-/* COMPÉTENCES V2 */
 .skills {
   padding-top: 50px;
   width: 65%;
@@ -352,7 +312,7 @@ body.page-accueil {
   justify-content: space-between;
 }
 
-.skills__contenu.skillsItem__content p {
+.skills__contenu .skillsItem__content p {
   font-weight: bold;
   font-size: 18px;
 }
@@ -376,7 +336,6 @@ body.page-accueil {
   border-radius: 5px;
   background: var(--highlight-color);
 } 
-
 
 /* LANGUES */
 .langues .langues__contenu {
@@ -618,15 +577,32 @@ h2 {
   padding-bottom: 0;
 }
 
-.histoire__contenu .marche-nordique {
+.lien {
   text-decoration: none;
   color: var(--highlight-color);
   font-style: italic;
 }
 
-.histoire__liste .histoire__app .img__app {
-  width: 10%;
+.histoire__lecons .lecon__texte {
+  text-align: justify;
+}
+
+.lecon__balisage .img__balise {
   float: right;
+  width: 400px;
+  padding: 20px;
+}
+
+.lecon__rythme .img__rythme {
+  float: left;
+  width: 250px;
+  padding: 0 20px;
+}
+
+.lecon__lavie .img__courage {
+  float: right;
+  width: 300px;
+  padding: 0 20px;
 }
 
 /* MATÉRIELS */
