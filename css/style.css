@@ -587,6 +587,10 @@ h2 {
   font-style: italic;
 }
 
+.histoire__lecons {
+  list-style: circle;
+}
+
 .histoire__lecons .lecon__texte {
   text-align: justify;
 }
@@ -610,6 +614,14 @@ h2 {
 }
 
 /* MATÉRIELS */
+.materiels {
+  padding-bottom: 0;
+}
+
+.materiels .container {
+  padding-bottom: 0;
+}
+
 .materiels .titre {
   width: 14%;
 }
@@ -628,16 +640,36 @@ h2 {
   border: 2px solid var(--highlight-color);
 }
 
-/* PARCOURS */
-
 /* AVANTAGES */
+.avantages {
+  padding-bottom: 0;
+}
 
-/* CONSEILS */
-.conseils .titre {
-  width: 17%;
+.avantages .container {
+  padding-bottom: 0;
+}
+
+.avantages__liste {
+  list-style: circle;
 }
 
 /* GALERIES */
+.galeries .galeries__liste {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.galeries__liste .galerie__img img {
+  width: 250px;
+}
+
+.galeries__liste .galerie__img .img-3 {
+  grid-row: 1 / span 2;
+}
+
+.galeries__liste .galerie__img .img__contenu {
+  display: none;
+}
 
 /* FIN de la page d'intérêt */
 
