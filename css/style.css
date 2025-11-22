@@ -654,6 +654,10 @@ h2 {
 }
 
 /* GALERIES */
+.galeries {
+  padding-bottom: 0;
+}
+
 .galeries .galeries__liste {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -741,14 +745,107 @@ h2 {
   transition: all 0.3s ease-in-out;
 }
 
-/* Configurations générales pour "Du cours R3.03" & "Du portfolio" */
+/* La configuration générale pour "Du cours R3.03" & "Du portfolio" */
 .partie__titre {
   text-transform: uppercase;
+}
+
+.div__img {
+  text-align: center;
+}
+
+.div__img .img {
+  width: 25%;
+  border: 2px solid var(--highlight-color);
+  border-radius: 10px;
+}
+
+.texte__style {
+  background-color: var(--highlight-color);
+  font-weight: bold;
+  color: var(--primary-bg-color);
+}
+
+.texte__style2 {
+  color: var(--highlight-color);
+  font-weight: bold;
 }
 
 /* DU COURS R3.03 */
 .cours .titre {
   width: 24%;
+}
+
+.cours__html li {
+  text-align: justify;
+}
+
+/* Partie HTML */
+.html__partie2 .htmlPartie2__theories li{
+  list-style: none;
+}
+
+.htmlPartie2__theories p {
+  text-decoration: underline;
+}
+
+.htmlPartie2__theories .htmlPartie2__balises li {
+  list-style: disc;
+}
+
+.htmlPartie2__balises .listeInterieure li {
+  list-style: circle;
+}
+
+.htmlPartie2__theories .htmlPartie2__importants li {
+  list-style: disc;
+}
+
+.htmlPartie2__importants .importantes__titres .liste li,
+.htmlPartie2__importants .importantes__titres .tableau li
+ {
+  list-style: circle;
+}
+
+/* Partie CSS */
+.cours__css {
+  text-align: justify;
+}
+
+.css__partie1 p,
+.css__partie4 p {
+  text-decoration: underline
+}
+
+.css__partie5 table {
+  margin: 0 auto;
+}
+
+.css__partie5 table th,
+.css__partie5 table td {
+  padding: 10px;
+}
+
+.css__partie5 table, th, td {
+  border: 1px solid var(--primary-text-color);
+  border-collapse: collapse;
+}
+
+/* Partie JavaScript */
+.cours__js {
+  text-align: justify;
+}
+
+.js__partie2 .jsPart2__dom li {
+  list-style: none;
+}
+
+.js__partie2 p {
+  text-decoration: underline;
+}
+
+.jsPart2__dom .dom__events li {
+  list-style: circle;
 }
 
 /* DU PORTFOLIO */

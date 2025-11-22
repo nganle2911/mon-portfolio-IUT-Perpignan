@@ -72,13 +72,16 @@
         <div class="container presentation__contenu">
             <h2>Présentation</h2>
             <p>
-                Excepteur qui voluptate anim dolore esse nisi eu. Ipsum laborum culpa ipsum tempor tempor occaecat exercitation quis id proident consectetur ullamco in. Elit ipsum non duis proident tempor do consequat ut non consequat cupidatat. In qui nostrud anim nulla tempor dolore magna velit nostrud labore aliqua duis aute.
-                <br>
-                Lorem pariatur qui aliqua officia ut ea mollit Lorem id consectetur est irure nostrud qui. In occaecat sit minim occaecat. Est deserunt anim officia id velit sint ad laboris labore cillum elit ad magna.
-                <br>
-                Cupidatat ullamco occaecat nisi ut laborum proident ullamco commodo in. Dolor enim nisi mollit cillum irure officia. Eiusmod duis irure deserunt pariatur sit officia magna deserunt excepteur. Ut est laboris reprehenderit adipisicing mollit dolore tempor do et eu do nulla. Enim labore sit aliqua fugiat ea irure nulla enim qui magna. Excepteur nulla ut deserunt qui ea aliquip adipisicing excepteur exercitation voluptate eu proident commodo nostrud. Velit laboris Lorem adipisicing irure do nisi aliquip eu non enim eiusmod.
+                Pour mener à bien la réalisation de ce site web personnel, il est essentiel d'acquérir les bases du HTML qui permet de structurer le contenu d'une page web, du CSS qui assure une mise en forme visuelle de manière claire et attrayante, ainsi que du JavaScript qui rend le site web interactif et dynamique.
+                Ces trois compétences constituent les fondations indispensables du développement web et permettent de transformer une simple idée en un site complet et fonctionnel.
                 <br><br>
-                Cette page contient deux parties principales, <a href="#coursR303"><b>les connaissances apprises du cours R3.03</b></a> et <a href="#portfolioR303"><b>les compétences acquises de la conception du portfolio</b></a>.
+                Dans cette page, je vous présente ce que j’ai appris tout au long du cours d’HTML et de CSS, ainsi que les connaissances et compétences que j’ai développées à travers la conception de ce projet de portfolio.
+                <br><br>
+                Cette page se compose deux parties principales:
+                <ul>
+                    <li><a href="#coursR303"><b>Les connaissances apprises du cours R3.03</b></a></li>
+                    <li><a href="#portfolioR303"><b>Les compétences acquises de la conception du portfolio</b></a></li>
+                </ul>
             </p>
         </div>
     </div>
@@ -95,23 +98,180 @@
                     <div class="html__partie1">
                         <h3 class="html__sousTitre">1. Introduction au HTML</h3>
                         <ul>
-                            <li>Hyper Text Markup Language</li>
-                            <li>W3C et normes HTML</li>
-                            <li>Editeur HTML</li>
+                            <li>
+                                <b>Le protocol du HTTP </b>: C'est un protocol de communication entre le client (le navigateur) et le serveur. Le navigateur envoie une requête au serveur pour demander une ressource (des pages web en HTML). Le serveur répond ensuite avec le contenu demandé et un code d'état - par exemple : 200 &rarr; OK, 404 &rarr; Not Found, 500 &rarr; Internal Server Error, etc. 
+                            </li>
+                            <li>
+                                <b>L'URI du protocole HTTP</b> : Une URI est une chaîne de caractères qui identifie par son ou sa localisation une ressource. On parle plus spécifiquement d'URL (Uniform Ressource Locator).
+                            </li>
+                            <li>
+                                <b>HTML </b>(Hyper Text Markup Language) : Un langage des balises qui permet de structurer le contenu d'une page web. 
+                            </li>
                         </ul>
                     </div>
                     <!-- Partie 2 - Ecriture des balises -->
                     <div class="html__partie2">
                         <h3 class="html__sousTitre">2. Écriture des balises en HTML</h3>
-                        <ul>
-                            <li>Système balise ouvrante/fermante</li>
-                            <li>Système balise ponctuelle</li>
-                            <li>Structure d'un fichier HTML</li>
-                            <li>Balises HTML</li>
-                            <li>Balises avec attributs</li>
-                            <li>Balises importantes</li>
-                            <li>Élément link</li>
-                            <li>Balises meta</li>
+                        <ul class="htmlPartie2__theories">
+                            <li>
+                                <b>2.1 Système balise ouvrante/fermante </b>: C'est un moyen de délimiter le début et la fin d'une mise en forme à appliquer à du texte. La mise en forme s'applique sur le contenu qui est situé entre la balise ouvrante et la balise fermante.
+                                <br>
+                                <div class="div__img">
+                                    <img class="img" src="../images/img1.png" alt="comment-ecrire-des-balises">
+                                </div>
+                                <p>Exemple:</p>
+                                &lt;b&gt;du texte qui sera en gras&lt;/b&gt; &rarr; le texte situé entre &lt;b&gt; et &lt;/b&gt; sera affiché en gras
+                            </li>
+                            <br>
+                            <li>
+                                <b>2.2 Système balise ponctuelle</b> : C'est un moyen d'indiquer une action de mise en page dans le document (qui ne soit pas une mise en forme d'un contenu précis, mais une action précise plutôt)
+                                <br>
+                                <div class="div__img">
+                                    <img class="img" src="../images/img2.png" alt="comment-ecrire-des-balises">
+                                </div>
+                                <p>Exemple:</p>
+                                &lt;br/&gt; &rarr; effectue un saut de ligne (cela ne s'applique pas à un contenu de texte, mais agit pour effectuer l'action de saut de ligne dans le document.)
+                            </li>
+                            <br>
+                            <li>
+                                <b>2.3 Structure d'un fichier HTML</b> : Voici la structure de base d'un fichier HTML vide <i class="fa-regular fa-hand-point-down"></i>
+                                <br><br>
+                                <div class="div__img">
+                                    <img class="img" src="../images/img3.png" alt="fichier-html-vide">
+                                </div>
+                            </li>
+                            <br>
+                            <li>
+                                <b>2.4 Balises HTML</b> : Il est important de connaître les principes balises HTML de base pour pouvoir écrire correctement une page web.
+                                Voici quelques exemples de balises fondamentales <i class="fa-regular fa-hand-point-down"></i>
+                                <br>
+                                <ul class="htmlPartie2__balises">
+                                    <li class="balises__titres">
+                                        <b>Balises de titre HTML</b> : 
+                                        <span class="texte__style">&lt;h1&gt;&lt;/h1&gt;</span>
+                                        jusqu'à
+                                        <span class="texte__style">&lt;h6&gt;&lt;/h6&gt;</span>
+                                        &rightarrow; Pour définir les titres et sous-titres en mettant en gras et avec saut de ligne avant et après
+                                        <br/>
+                                        <ul class="listeInterieure titres__liste">
+                                            <li>
+                                                <span class="texte__style">&lt;h1&gt;&lt;/h1&gt;</span> : Titre principal de la page
+                                            </li>
+                                            <li>
+                                                <span class="texte__style">&lt;h2&gt;&lt;/h2&gt;</span> : Sous-titre ou titre de section
+                                            </li>
+                                            <li>
+                                                <span class="texte__style">&lt;h3&gt;&lt;/h3&gt;</span> : sous-titre d'un &lt;h2&gt;
+                                            </li>
+                                            <li>etc.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="balises__formatTexte">
+                                        <b>Balises du format du texte</b> &rightarrow; Pour formater du texte 
+                                        <br>
+                                        <ul class="listeInterieure formatTexte__liste">
+                                            <li>
+                                                <span class="texte__style">&lt;b&gt;&lt;/b&gt;</span> : texte en gras 
+                                            </li>
+                                            <li>
+                                                <span class="texte__style">&lt;i&gt;&lt;/i&gt;</span> : texte en italique
+                                            </li>
+                                            <li>
+                                                <span class="texte__style">&lt;u&gt;&lt;/u&gt;</span> : texte souligné
+                                            </li>
+                                            <li>
+                                                <span class="texte__style">&lt;s&gt;&lt;/s&gt;</span> : texte barré
+                                            </li>
+                                            <li>
+                                                <span class="texte__style">&lt;p&gt;&lt;/p&gt;</span> : paragraphe
+                                            </li>
+                                            <li>
+                                                etc.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <b>2.5 Balises avec attributs</b> : Toutes les balises peuvent avoir des attributs. Un attribut est un paramètre supplémentaire qui s'ajoute au comportement de base d'une balise pour le modifier et le compléter.
+                                <br><br>
+                                <div class="div__img">
+                                    <img class="img" src="../images/img4.png" alt="attribut">
+                                </div>
+                            </li>
+                            <br>
+                            <li>
+                                <b>2.6 Balises importantes</b> 
+                                <br>
+                                <ul class="htmlPartie2__importants">
+                                    <li class="importantes__titres">
+                                        <b>Lien</b> : 
+                                        <span class="texte__style">&lt;a&gt;&lt;/a&gt;</span> &rightarrow; Création de liens hypertextes
+                                        <p>Exemple:</p>
+                                        &lt;a href="https://www.google.com/" target="_blank"&gt;du texte à cliquer pour ouvrir le lien nouvelle fenêtre&lt;/a&gt;
+                                    </li>
+                                    <li class="importantes__titres">
+                                        <b>Image</b> : 
+                                        <span class="texte__style">&lt;img/&gt;</span> &rightarrow; Insérer une image à l'address indiquée
+                                        <p>Exemple:</p>
+                                        &lt;img src="http://www.truc.org/image.jpg" width="50px" /&gt;
+                                    </li>
+                                    <li class="importantes__titres">
+                                        <b>Listes</b> : Deux types de listes : liste ordonnée et liste non ordonnée
+                                        <ul class="liste">
+                                            <li>
+                                                Liste non ordonnée (à puces) : 
+                                                <span class="texte__style">
+                                                    &lt;ul&gt;
+                                                    &lt;li&gt;&lt;/li&gt;
+                                                    &lt/ul&gt;
+                                                </span>
+                                            </li>
+                                            <li>
+                                                Liste ordonnée (à numéros) : 
+                                                <span class="texte__style">
+                                                    &lt;ol&gt;
+                                                    &lt;li&gt;&lt;/li&gt;
+                                                    &lt/ol&gt;
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="importantes__titres">
+                                        <b>Tableaux</b> : Création d'un tableau
+                                        <ul class="tableau">
+                                            <li>
+                                                <span class="texte__style">&lt;table&gt;&lt;/table&gt;</span> : tableau
+                                            </li>
+                                            <li>
+                                                <span class="texte__style">&lt;caption&gt;&lt;/caption&gt;</span> : titre du tableau
+                                            </li>
+                                            <li>
+                                                <span class="texte__style">&lt;tr&gt;&lt;/tr&gt;</span> : ligne du tableau
+                                            </li>
+                                            <li>
+                                                <span class="texte__style">&lt;th&gt;&lt;/th&gt;</span> : cellule de légende de ligne ou de colonne
+                                            </li>
+                                            <li>
+                                                <span class="texte__style">&lt;td&gt;&lt;/td&gt;</span> : cellule du tableau
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <b>2.7 Élément link</b> : <span class="texte__style">&lt;link/&gt;</span> &rightarrow; La balise link permet de spécifier les URLs de fichiers liés d'une manière ou d'une autre au document.
+                                <p>Exemple:</p>
+                                &lt;link rel="stylesheet" type="text/css" href="cours.css" /&gt;
+                            </li>
+                            <br>
+                            <li>
+                                <b>2.8 Balises meta</b> : <span class="texte__style">&lt;meta/&gt;</span> &rightarrow; Les balises META servent à placer des métadonnées dans une page HTML. On placera ces balises dans l'élément <i>"head"</i> et elles ne seront pas affichées sur la page.
+                                <p>Exemple:</p>
+                                &lt;meta charset="UTF-8" /&gt;
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -122,31 +282,226 @@
                     <!-- Partie 1 - Introduction -->
                     <div class="css__partie1">
                         <h3 class="css__sousTitre">1. Introduction au CSS</h3>
-
+                        <ul>
+                            <li>
+                                <b>CSS</b> (Cascading Style Sheets) : Un langage de mise en forme des documents HTML et XML.
+                            </li>
+                            <li>
+                                <b>Trois façons d'utiliser le CSS</b> 
+                                <ol class="cssPart1__utilisation">
+                                    <li>
+                                        <b>CSS en ligne (inline)</b> - directement dans une balise HTML avec l'attribut <i>"style"</i>
+                                        <p>Exemple:</p>
+                                        &lt;p <span class="texte__style2">style="color: blue;"</span>&gt;Texte en bleu&lt;/p&gt;
+                                    </li>
+                                    <li>
+                                        <b>CSS interne</b> - dans la section <i>&lt;head&gt;</i> du fichier HTML
+                                        <p>Exemple:</p>
+                                        &lt;head&gt;
+                                        <span class="texte__style2">
+                                            &lt;style&gt;
+                                            p {color: blue;}
+                                            &lt;/style&gt;
+                                        </span>
+                                        &lt;/head&gt;
+                                    </li>
+                                    <li>
+                                        <b>CSS externe</b> - dans un fichier séparé <i>(style.css)</i>
+                                        <p>Exemple:</p>
+                                        &lt;link rel="stylesheet" <span class="texte__style2">href="style.css"</span> /&gt;
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
                     </div>
                     <!-- Partie 2 - Philosophie du CSS -->
                     <div class="css__partie2">
                         <h3 class="css__sousTitre">2. Philosophie du CSS</h3>
+                        On considère que chaque contenu encadré par une balise du HTML est un conteneur qui contient un contenu.
+                        Un conteneur est une boîte rectangulaire dans laquelle se place le contenu. On parle du modèle de boîte.
+                        <div class="div__img">
+                            <img class="img" src="../images/img5.png" alt="box-model">
+                        </div>
+                        <br>
+                        <ul class="cssPart2__boxModel">
+                            <li>
+                                <span class="texte__style2">margin</span> : une marge autour à l'extérieur
+                            </li>
+                            <li>
+                                <span class="texte__style2">padding</span> : une marge autour à l'intérieur
+                            </li>
+                            <li>
+                                <span class="texte__style2">border</span> : le contour par un rectangle
+                            </li>
+                        </ul>
                     </div>
                     <!-- Partie 3 - Ecrire du CSS -->
                     <div class="css__partie3">
                         <h3 class="css__sousTitre">3. Écrire du CSS</h3>
+                        Le code CSS est toujours structure de la même façon ci-dessous : 
+                        <div class="div__img">
+                            <img class="img" src="../images/img6.png" alt="css">
+                        </div>
+                        <br>
+                        <ul class="cssPart2__ecriture">
+                            <li>
+                                <span class="texte__style2">sélecteur</span> : indique à quel élement appliquer le style. Par exemple: p, .classe, #id, etc.
+                            </li>
+                            <li>
+                                <span class="texte__style2">propriété</span> : indique ce qui sera modifié dans la mise en forme de la balise. Par exemple: color, font-size, margin, background-color, etc.
+                            </li>
+                            <li>
+                                <span class="texte__style2">valeur</span> : la nouvelle valeur qui permet de changer la propriété. Par exemple: red, 16px, center, left, etc.
+                            </li>
+                        </ul>
                     </div>
                     <!-- Partie 4 - Display -->
                     <div class="css__partie4">
                         <h3 class="css__sousTitre">4. Display</h3>
+                        La propriété CSS <span class="texte__style2">display</span> est la plus importante pour contrôler la mise en page. 
+                        <ul class="cssPart4__display">
+                            <li>
+                                <b>Display: <span class="texte__style">"block"</span></b> &rightarrow; Un élément block-level commence sur une nouvelle ligne et s'étire autant qu'il peut sur la gauche et la droite.
+                                <br>
+                                Des éléments block-level :
+                                <span class="texte__style">
+                                    &lt;div&gt;
+                                </span> - 
+                                <span class="texte__style">
+                                    &lt;p&gt;
+                                </span> - 
+                                <span class="texte__style">
+                                    &lt;hr&gt;
+                                </span> - 
+                                <span class="texte__style">
+                                    &lt;table&gt;
+                                </span> - 
+                                etc.
+                            </li>
+                            <li>
+                                <b>Display: <span class="texte__style">"inline"</span></b> &rightarrow; Un élément inline peut encadrer du texte dans un paragraphe sans interrompre le flux de ce paragraphe.
+                                <br>
+                                Des éléments inline :
+                                <span class="texte__style">
+                                    &lt;span&gt;
+                                </span> - 
+                                <span class="texte__style">
+                                    &lt;a&gt;
+                                </span> - 
+                                <span class="texte__style">
+                                    &lt;b&gt;
+                                </span> - 
+                                <span class="texte__style">
+                                    &lt;i&gt;
+                                </span> - 
+                                etc.
+                            </li>
+                            <li>
+                                <b>Display: <span class="texte__style">"none"</span></b> &rightarrow; Pour masquer ou afficher facilement des éléments en CSS
+                            </li>
+                        </ul>
                     </div>
-                    <!-- Partie 5 - Classes -->
+                    <!-- Partie 5 - Sélecteurs de base -->
                     <div class="css__partie5">
-                        <h3 class="css__sousTitre">5. Classes</h3>
+                        <h3 class="css__sousTitre">5. Sélecteurs de base</h3>
+                        Le tableau ci-dessous présente les principaux sélecteurs de base, leur équivalent en CSS ainsi que quelques exemples d’utilisation.
+                        <br><br>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sous HTML</th>
+                                    <th>Sous CSS</th>
+                                    <th>Exemple dans CSS</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                                    &lt;p&gt;
+                                </td>
+                                <td>Sélecteur de balise</td>
+                                <td>
+                                    <span class="texte__style2">p</span> {color: blue;}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    class="text"
+                                </td>
+                                <td>Sélecteur de classe universelle</td>
+                                <td>
+                                    <span class="texte__style2">.text</span> {font-size: 16px;}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &lt;div class="section"&gt;&lt;/div&gt;
+                                </td>
+                                <td>Sélecteur de classe attachée</td>
+                                <td>
+                                    <span class="texte__style2">div.section</span> {display: none;}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    id="titre"
+                                </td>
+                                <td>Sélecteur d'identifiant</td>
+                                <td>
+                                    <span class="texte__style2">#titre</span> {color: red;}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &lt;a&gt;&lt;/a&gt;
+                                </td>
+                                <td>Sélecteur de pseudo-classe</td>
+                                <td>
+                                    <span class="texte__style2">a:hover</span> {cursor: pointer;}
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                    <!-- Partie 6 - Identifiant vs Classes -->
+                    <!-- Partie 6 - Propriétés essentielles -->
                     <div class="css__partie6">
-                        <h3 class="css__sousTitre">6. Identifiant vs Classes</h3>
-                    </div>
-                    <!-- Partie 7 - Pseudo -->
-                    <div class="css__partie6">
-                        <h3 class="css__sousTitre">7. Pseudo</h3>
+                        <h3 class="css__sousTitre">6. Propriétés essentielles</h3>
+                        <ul class="cssPart6__prop">
+                            <li>
+                                Textes et polices : 
+                                <span class="texte__style2">
+                                    font-family, font-weight, font-size, color, text-align, etc.
+                                </span>
+                            </li>
+                            <li>
+                                Arrières-plans : 
+                                <span class="texte__style2">
+                                    background, background-image, background-size, background-position, etc.
+                                </span>
+                            </li>
+                            <li>
+                                Listes : 
+                                <span class="texte__style2">
+                                    list-style, list-style-type, etc.
+                                </span>
+                            </li>
+                            <li>
+                                Bordures et contours : 
+                                <span class="texte__style2">
+                                    border, border-radius, border-color, margin, padding, etc.
+                                </span>
+                            </li>
+                            <li>
+                                Positionnement : 
+                                <span class="texte__style2">
+                                    display, float, position, top, etc.
+                                </span>
+                            </li>
+                            <li>
+                                Animations: 
+                                <span class="texte__style2">
+                                    animation, animation-delay, animation-duration, etc.
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -156,10 +511,52 @@
                     <!-- Partie 1 - Introduction -->
                     <div class="js__partie1">
                         <h3 class="js__sousTitre">1. Introduction au JavaScript</h3>
+                        <ul class="jsPart1__intro">
+                            <li>
+                                <b>JavaScript</b> : est un langage de script qui sert à rendre les pages webs dynamiques et interactives.
+                            </li>
+                            <li>
+                                Le rôle principal du JavaScript est de réagir aux actions de l'utilisateur, par exemple: clics, saisies, survols de souris, etc. et de modifier le contenu de la page.
+                            </li>
+                            <li>
+                                <b>Comment intégrer le code JavaScript dans le fichier HTML</b> : On écrit le code JavaScript dans une balise suivante : &lt;script type="text/javascript"&gt;Code JavaScript ici&lt;/script&gt;
+                            </li>
+                        </ul>
                     </div>
-                    <!-- Partie 2 - Variables -->
+                    <!-- Partie 2 - Les évènements -->
                     <div class="js__partie2">
-                        <h3 class="js__sousTitre">2. Les variables</h3>
+                        <h3 class="js__sousTitre">2. Les évènements</h3>
+                        <ul class="jsPart2__dom">
+                            <li>
+                                <b>2.1 DOM</b> (Document Object Model) : DOM est une description structurée de l'ensemble des éléments contenus dans un document web, sous une forme arborescente. C'est une représentation du document HTML d'origine sous une forme appelée plus précisément "arborescence de noeud" ou "nod tree" en anglais.
+                                <br><br>
+                                Autrement dit, le DOM est considéré comme le pont entre HTML (le contenu) et JavaScript (le comportement). Il permet à votre script d'interagir avec la page web comme s'il manipulait une arborescence d'objets.
+                            </li>
+                            <br>
+                            <li>
+                                <b>2.2 Gestionnaire d'évènements par attributs HTML</b> :
+                                Le code JavaScript est directement intégré dans la balise HTML à l'aide d'un attribut.
+                                <p>Exemple:</p>
+                                &lt;button <span class="texte__style2">onclick="mafonction()"</span>&gt;Essai&lt;/button&gt;
+                                <br><br>
+                                Liste des évènements importants: 
+                                <ul class="dom__events">
+                                    <li>
+                                        <span class="texte__style2">onclick</span> : l'évènement se produit quand l'utilisateur clique sur l'élément
+                                    </li>
+                                    <li>
+                                        <span class="texte__style2">onmouseover</span> : permer de savoir que le curseur de la souris survole sur un élément
+                                    </li>
+                                    <li>
+                                        <span class="texte__style2">ondblclick</span> : l'évènement se produit lorsque l'utilisateur double clique sur l'élément
+                                    </li>
+                                    <li>etc.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>2.3 </b>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>     
