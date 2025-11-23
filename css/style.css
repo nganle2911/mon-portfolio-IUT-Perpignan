@@ -3,7 +3,8 @@
   --primary-bg-color: #faf7f0;
   --secondary-bg-color: #d8d2c2;
   --primary-text-color: #4a4947;
-  --highlight-color: #b17457;
+  /* --highlight-color: #b17457; */
+  --highlight-color: rgb(177,116,87);
   --font-title: "Merriweather", serif;
   --font-text: "Playfair Display", serif;
 }
