@@ -1,7 +1,0 @@
-- L'URL de mon site web : https://mon-portfolio-iut-perpignan.vercel.app/
-- Lien Github : https://github.com/nganle2911/mon-portfolio-IUT-Perpignan 
----
-Remarque : 
-Après le déploiement, j'ai remarqué que les couleurs de mon site web ne s'affichent pas correctement lorsque je l'ouvre aevc Google Chrome (sur mon ordinateur). 
-Cependant, ce problème ne se produit pas sur d'autres navigateurs, comme Firefox ou Safari, ni même sur d'autres ordinateurs. 
-Si vous rencontrez le même problème, je vous recommande de consulter le site via un autre navigateur pour avoir un rendu visuel plus fidèle. 
