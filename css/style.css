@@ -771,6 +771,24 @@ h2 {
   font-weight: bold;
 }
 
+.texte__style3 {
+  text-decoration: underline;
+}
+
+table {
+  margin: 0 auto;
+}
+
+table th, table td
+{
+  padding: 10px;
+}
+
+table, th, td {
+  border: 1px solid var(--primary-text-color);
+  border-collapse: collapse;
+}
+
 /* DU COURS R3.03 */
 .cours .titre {
   width: 24%;
@@ -783,10 +801,6 @@ h2 {
 /* Partie HTML */
 .html__partie2 .htmlPartie2__theories li{
   list-style: none;
-}
-
-.htmlPartie2__theories p {
-  text-decoration: underline;
 }
 
 .htmlPartie2__theories .htmlPartie2__balises li {
@@ -812,12 +826,7 @@ h2 {
   text-align: justify;
 }
 
-.css__partie1 p,
-.css__partie4 p {
-  text-decoration: underline
-}
-
-.css__partie5 table {
+/* .css__partie5 table {
   margin: 0 auto;
 }
 
@@ -829,7 +838,7 @@ h2 {
 .css__partie5 table, th, td {
   border: 1px solid var(--primary-text-color);
   border-collapse: collapse;
-}
+} */
 
 /* Partie JavaScript */
 .cours__js {
@@ -840,12 +849,20 @@ h2 {
   list-style: none;
 }
 
-.js__partie2 p {
-  text-decoration: underline;
-}
-
 .jsPart2__dom .dom__events li {
   list-style: circle;
+}
+
+.jsPart2__dom .blockCode {
+  display: flex;
+  flex-direction: column;
+}
+
+.jsPart2__dom .blockCode blockquote {
+  border: 1px solid  var(--primary-text-color);
+  background-color: var(--primary-text-color);
+  color: var(--primary-bg-color);
+  padding: 10px 20px;
 }
 
 /* DU PORTFOLIO */
