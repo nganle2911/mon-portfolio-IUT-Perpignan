@@ -2,25 +2,25 @@
 // COMPÉTENCES 
 const listeCompetences = {
     langage: [
-        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}
+        {nom: "Python", valeur: 70}, {nom: "JavaScript", valeur: 75}, {nom: "PHP", valeur: 45}, {nom: "Java", valeur: 30}
     ],
     bdd: [
-        {nom: "PostgreSQL", valeur: 45}, {nom: "MySQL", valeur: 40}, {nom: "Access", valeur: 30}
+        {nom: "PostgreSQL", valeur: 55}, {nom: "MySQL", valeur: 40}, {nom: "Access", valeur: 45}
     ],
     dev: [
-        {nom: "HTML/CSS", valeur: 70}, {nom: "Bootstrap", valeur: 75}, {nom: "NodeJS", valeur: 45}
+        {nom: "HTML/CSS", valeur: 85}, {nom: "Bootstrap", valeur: 80}, {nom: "NodeJS", valeur: 65}
     ],
     sig: [
-        {nom: "ArcGIS", valeur: 70}, {nom: "QGIS", valeur: 75}
+        {nom: "ArcGIS", valeur: 35}, {nom: "QGIS", valeur: 45}
     ],
     dataviz: [
         {nom: "Power BI", valeur: 70}, {nom: "Datawrapper", valeur: 75}
     ],
     graphique: [
-        {nom: "Figma", valeur: 70}, {nom: "Photoshop", valeur: 75}, {nom: "Canva", valeur: 45}, {nom: "Illustration", valeur: 35}
+        {nom: "Figma", valeur: 85}, {nom: "Photoshop", valeur: 75}, {nom: "Canva", valeur: 85}, {nom: "Illustration", valeur: 55}
     ],
     autres: [
-        {nom: "Git/Github", valeur: 70}, {nom: "Docker", valeur: 75}
+        {nom: "Git/Github", valeur: 65}, {nom: "Docker", valeur: 45}
     ]
 };
 

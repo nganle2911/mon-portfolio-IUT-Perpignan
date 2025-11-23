@@ -486,10 +486,6 @@ body.page-accueil {
 body.page-interet,
 body.page-apprenti {
   background-color: var(--primary-bg-color);
-  /* background-image: url("../images/bg-3.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
 }
 
 /* TITRE DE LA PAGE */
@@ -745,7 +741,7 @@ h2 {
   transition: all 0.3s ease-in-out;
 }
 
-/* La configuration générale pour "Du cours R3.03" & "Du portfolio" */
+/* La configuration générale pour "Du cours R3.03" */
 .partie__titre {
   text-transform: uppercase;
 }
@@ -826,20 +822,6 @@ table, th, td {
   text-align: justify;
 }
 
-/* .css__partie5 table {
-  margin: 0 auto;
-}
-
-.css__partie5 table th,
-.css__partie5 table td {
-  padding: 10px;
-}
-
-.css__partie5 table, th, td {
-  border: 1px solid var(--primary-text-color);
-  border-collapse: collapse;
-} */
-
 /* Partie JavaScript */
 .cours__js {
   text-align: justify;
@@ -864,10 +846,4 @@ table, th, td {
   color: var(--primary-bg-color);
   padding: 10px 20px;
 }
-
-/* DU PORTFOLIO */
-.portfolio .titre {
-  width: 31%;
-}
-
 /* FIN de la page d'apprentissage */
